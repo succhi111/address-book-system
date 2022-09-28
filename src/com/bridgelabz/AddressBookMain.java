@@ -39,7 +39,7 @@ public class AddressBookMain {
 /*
 Contacts added using Constructor and print it using print function of addressbook
  */
-        Person person = new Person("shalesh", "dutt", "gurgaon", "Gurgaon", "haryana", 129446, "947803666");
+        Person person = new Person("suchendra", "mishra", "angwali", "Bokaro", "jharkhand", 452454, "7524642152");
         addressBook.addContact(person);
         System.out.println("Before adding Contacts are");
         addressBook.printAddressBook();

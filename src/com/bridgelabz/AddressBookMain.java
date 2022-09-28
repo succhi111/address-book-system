@@ -1,6 +1,5 @@
 package com.bridgelabz;
 
-
 import java.util.Scanner;
 
 public class AddressBookMain {
@@ -40,7 +39,7 @@ public class AddressBookMain {
         /*
         Contacts added using Constructor and print it using print function of Addressbook.
          */
-        Person person = new Person("suchendra", "mishra", "angwali", "bokaro", "jharkhand", 454343, "99543232");
+        Person person = new Person("suchendra", "mishra", "angwali", "bokaro", "jharkhand", 4465466, "7526483656");
         addressBook.addContact(person);
         System.out.println("Before adding Contacts are");
         addressBook.printAddressBook();
@@ -51,16 +50,16 @@ public class AddressBookMain {
         System.out.println("Please enter details of new contacts you want to add");
         Person person1 = input(scanner);
         addressBook.addContact(person1);
-        System.out.println("Before editing Contacts are");
+        System.out.println("Before deleting Contacts are");
         addressBook.printAddressBook();
 
        /*
-       edit existing contact by searching using its name and setting new details entered
+       deleting existing contact by searching its name
         */
-        System.out.println("Please enter name of the person and details you want to change");
-        Person person3 = input(scanner);
-        addressBook.editContact(person3);
-        System.out.println("After editing contact details are");
+        System.out.println("Please enter name of the person you want to delete");
+        System.out.println();
+        addressBook.deleteContact("suchendra");
+        System.out.println("After deleting contact details are");
         addressBook.printAddressBook();
 
     }
